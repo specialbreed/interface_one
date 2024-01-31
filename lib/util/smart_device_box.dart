@@ -6,13 +6,13 @@ class SmartDeviceBox extends StatelessWidget {
   final String smartDeviceName;
   final String iconPath;
   final bool powerOn;
-  final void Function(bool)? onChnaged;
+  final void Function(bool)? onChanged;
 
   SmartDeviceBox ({
     required this.smartDeviceName,
     required this.iconPath,
     required this.powerOn,
-    required this.onChnaged,
+    required this.onChanged,
   });
 
   @override
@@ -52,7 +52,7 @@ class SmartDeviceBox extends StatelessWidget {
                 angle: pi / 2,
                 child: Switch(
                     value: powerOn,
-                    onChanged: onChnaged,
+                    onChanged: onChanged,
                 ),
               )
             ],

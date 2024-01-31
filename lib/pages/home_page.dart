@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
         smartDeviceName: mySmartDevices[index][0],
         iconPath: mySmartDevices[index][1],
         powerOn: mySmartDevices[index][2],
-        onChnaged: (value) => powerSwitchChanged(value, index),
+        onChanged: (value) => powerSwitchChanged(value, index),
       );
     }
             ),
